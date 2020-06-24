@@ -9,14 +9,19 @@ This program is still under development and in a design phase.
 ### Features 
 
  * Very much similar to [Jekyll](https://jekyllrb.com/) -- but not compatible
- * Secure to run for untrusted build data. Templates are compiled inside 
-Jinja's sandbox and includes do not allow relative paths.
+ * Secure to run for untrusted build data. Templates are compiled inside Jinja's sandbox and includes do not allow relative paths.
  * Designed KISS (Keep It Simple, Stupid) in mind, without the stupid part.
  * Fast to recompile -- Uses same strategies as Makefiles use
  * Small dependency footprint -- Written in [Python](https://www.python.org/) with [Jinja templates](https://jinja.palletsprojects.com/en/2.11.x/)
  * Template files are 100% compatible with Ansible
 
 ### Design 
+
+This compiler is designed to be extremely simple and safe to run for untrusted input data.
+
+It uses [Jinja templates](https://jinja.palletsprojects.com/en/2.11.x/) inside a sandbox as the template engine.
+
+It's perfect solution to compile static websites, but could be used to compile many other content.
 
 #### Data Files
 

@@ -1,0 +1,22 @@
+{
+  "name": "2web",
+  "version": "0.0.1",
+  "description": "2web Fast & Secure Website Builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sendanor/2web.git"
+  },
+  "keywords": [
+    "website", "html", "json", "yml", "compiler", "builder"
+  ]
+  "author": "Jaakko Heusala <jheusala@iki.fi>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sendanor/2web/issues"
+  },
+  "homepage": "https://github.com/sendanor/2web#readme"
+}

@@ -57,7 +57,7 @@ Templates may use include files from `_includes/NAME`, eg:
 For example a file `_includes/header.html` can be included as:
 
 ```
-{{ include('header.html' }}
+{{ include('header.html') }}
 ```
 
 **Note!** You cannot use relative paths for security reasons.

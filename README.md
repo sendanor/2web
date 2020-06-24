@@ -114,7 +114,7 @@ The configuration file `_config.json` can be used to change defaults:
   "2web": {
     "data": "data",
     "includes": "includes",
-    "templates": "templates"
+    "pages": "templates"
     "output": "public"
   }
 }

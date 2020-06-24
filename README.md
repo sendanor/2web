@@ -70,14 +70,14 @@ You may place any uncompiled public files there, too. Just make sure you *don't*
 
 ### Usage
 
- 0) Optional: Get coffee/tea beforehand because you most likely will not have 
+ 0) *Optional:* Get coffee/tea beforehand because you most likely will not have 
     enough spare time to get a coffee between these steps.
 
  1) Change your directory to the folder where your files are located
 
  2) Run `2web`
 
- 3) Optional: Make new changes and run `2web` again
+ 3) *Optional:* Make new changes and run `2web` again
 
 ### Command Line Options
 

@@ -66,7 +66,7 @@ For example a file `_includes/header.html` can be included as:
 
 Output files are saved `_site/PAGE.EXT` by default.
 
-You may place any uncompiled public files there, too. Just make sure you don't use same names for pages, or they will get overwritten.
+You may place any uncompiled public files there, too. Just make sure you *don't* use same names for pages, ***or they will get overwritten***.
 
 ### Usage
 

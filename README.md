@@ -32,7 +32,7 @@ specific data from `_data/PAGE.json`, where `PAGE` is the name from your
 
 The resulting data will be passed to the template engine as variables.
 
-### Template files
+#### Template files
 
 Templates for different pages are placed in `_pages/PAGE.EXT` where EXT is 
 usually `html`, but can be anything. 
@@ -45,7 +45,7 @@ For example if you have a page `_pages/index.html`:
  * The compiled result will be saved as `docs/index.html`
  * The file are recompiled only if input files have a newer timestamp than the compiled output.
 
-### Include files
+#### Include files
 
 Templates may use include files from `_includes/NAME`, eg:
 
@@ -56,6 +56,12 @@ For example a file `_includes/header.html` can be included as:
 ```
 
 **Note!** You cannot use relative paths for security reasons.
+
+#### The output directory
+
+Output files are saved `_site/PAGE.EXT` by default.
+
+You may place any uncompiled public files there, too. Just make sure you don't use same names for pages, or they will get overwritten.
 
 ### Usage
 
@@ -68,3 +74,11 @@ For example a file `_includes/header.html` can be included as:
 
  3) Optional: Make new changes and run `2web` again
 
+### Command Line Options
+
+| Short    | Long version      | Description                           | Default      | 
+| -------- | ----------------- | ------------------------------------- | ------------ |
+| `-d DIR` | `--data=DIR`      | You may change the data directory     | `_data`.     | 
+| `-i DIR` | `--includes=DIR`  | You may change the include directory  | `_includes`  |
+| `-t DIR` | `--templates=DIR` | You may change the template directory | `_templates` |
+| `-o DIR` | `--output=DIR`    | You may change the output directory   | `_site`      |

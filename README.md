@@ -81,9 +81,9 @@ You may place any uncompiled public files there, too. Just make sure you don't u
 
 ### Command Line Options
 
-| Short    | Long version      | Description                           | Default      | 
+| Short    | Long version      | Description                           | Default      |
 | -------- | ----------------- | ------------------------------------- | ------------ |
-| `-d DIR` | `--data=DIR`      | You may change the data directory     | `_data`.     | 
+| `-d DIR` | `--data=DIR`      | You may change the data directory     | `_data`.     |
 | `-i DIR` | `--includes=DIR`  | You may change the include directory  | `_includes`  |
 | `-t DIR` | `--templates=DIR` | You may change the template directory | `_templates` |
 | `-o DIR` | `--output=DIR`    | You may change the output directory   | `_site`      |

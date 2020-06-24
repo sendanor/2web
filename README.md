@@ -115,12 +115,12 @@ The configuration file `_config.json` can be used to change defaults:
 By default the exit status will be:
 
  * `0` when the compilation was made successfully
- * `1` when there was error(s)
+ * `1` when there was error(s) and error messages are written to stderr
 
 If you enable `--immutable`, there will be third option:
 
  * `0` when the compilation successful and there was changes
- * `1` when there was error(s)
+ * `1` when there was error(s) and error messages are written to stderr
  * `2` when the compilation successful but there was no changes
 
 ### Ansible support

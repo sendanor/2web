@@ -2,9 +2,13 @@
 
 Fast &amp; Secure Website Builder
 
+------------------------------------------------------------------------------------------------------
+
 ### Install
 
 This program is still under development and in a design phase.
+
+------------------------------------------------------------------------------------------------------
 
 ### Features 
 
@@ -14,6 +18,8 @@ This program is still under development and in a design phase.
  * Fast to recompile -- Uses same strategies as Makefiles use
  * Small dependency footprint -- Written in [Python](https://www.python.org/) with [Jinja templates](https://jinja.palletsprojects.com/en/2.11.x/)
  * Template files are 100% compatible with Ansible
+
+------------------------------------------------------------------------------------------------------
 
 ### Design 
 
@@ -68,6 +74,8 @@ Output files are saved `_site/PAGE.EXT` by default.
 
 You may place any uncompiled public files there, too. Just make sure you *don't* use same names for pages, ***or they will get overwritten***.
 
+------------------------------------------------------------------------------------------------------
+
 ### Usage
 
  0) *Optional:* Get coffee/tea beforehand because you most likely will not have 
@@ -78,6 +86,8 @@ You may place any uncompiled public files there, too. Just make sure you *don't*
  2) Run `2web`
 
  3) *Optional:* Make new changes and run `2web` again
+
+------------------------------------------------------------------------------------------------------
 
 ### Command Line Options
 
@@ -92,6 +102,8 @@ You may place any uncompiled public files there, too. Just make sure you *don't*
 | `-m`      | `--immutable`     | Enable immutable exit status          | Disabled       |
 
 **Note!** Exceptionally the command line arguments **can** use relative paths. This is by design. We don't trust the data, but we trust the guy/script running the command.
+
+------------------------------------------------------------------------------------------------------
 
 ### Configuration file
 
@@ -110,6 +122,8 @@ The configuration file `_config.json` can be used to change defaults:
 
 **Note!** These options **may not** use relative paths (eg. `../foo.txt`).
 
+------------------------------------------------------------------------------------------------------
+
 ### Program exit statuses
 
 By default the exit status will be:
@@ -123,6 +137,8 @@ If you enable `--immutable`, there will be third option:
  * `1` when there was error(s) and error messages are written to stderr
  * `2` when the compilation successful but there was no changes
 
+------------------------------------------------------------------------------------------------------
+
 ### Ansible support
 
 If you enable `--ansible`, the program will return ansible compatible JSON like:
@@ -132,3 +148,11 @@ If you enable `--ansible`, the program will return ansible compatible JSON like:
   "changed": false
 }
 ```
+
+------------------------------------------------------------------------------------------------------
+
+### License
+
+It's MIT.
+
+Completely open source, forever.

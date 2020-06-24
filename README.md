@@ -131,15 +131,15 @@ By default the exit status will be:
 | Return Value | Description                                                 |
 | ------------ | ----------------------------------------------------------- |
 | `0`          | Compilation was successful                                  |
-| `1`          | Error(s) detected and error messages are written to stderr  |
+| `1`          | Error(s) detected and error messages are written to stderr  |
 
 If you enable `--immutable`, there will be third non-standard return code `99`:
 
 | Return Value | Description                                                 |
 | ------------ | ----------------------------------------------------------- |
 | `0`          | Compilation was successful and changes were made            |
-| `1`          | Error(s) detected and error messages were written to stderr |
-| `99`         | Compilation was successful BUT there was no changes         |
+| `1`          | Error(s) detected and error messages were written to stderr |
+| `99`         | Compilation was successful BUT there was no changes         |
 
 ------------------------------------------------------------------------------------------------------
 

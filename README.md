@@ -81,9 +81,29 @@ You may place any uncompiled public files there, too. Just make sure you don't u
 
 ### Command Line Options
 
-| Short    | Long version      | Description                           | Default      |
-| -------- | ----------------- | ------------------------------------- | ------------ |
-| `-d DIR` | `--data=DIR`      | You may change the data directory     | `_data`.     |
-| `-i DIR` | `--includes=DIR`  | You may change the include directory  | `_includes`  |
-| `-t DIR` | `--templates=DIR` | You may change the template directory | `_templates` |
-| `-o DIR` | `--output=DIR`    | You may change the output directory   | `_site`      |
+| Short     | Long version      | Description                           | Default        |
+| --------- | ----------------- | ------------------------------------- | -------------- |
+| `-d DIR`  | `--data=DIR`      | You may change the data directory     | `_data`        |
+| `-i DIR`  | `--includes=DIR`  | You may change the include directory  | `_includes`    |
+| `-t DIR`  | `--templates=DIR` | You may change the template directory | `_templates`   |
+| `-o DIR`  | `--output=DIR`    | You may change the output directory   | `_site`        |
+| `-c FILE` | `--config=FILE`   | You may change the config file        | `_config.json` |
+
+**Note!** The command line arguments may use relative paths.
+
+### Configuration file
+
+The configuration file `_config.json` can be used to change defaults: 
+
+```
+{
+  "2web": {
+    "data": "data",
+    "includes": "includes",
+    "templates": "templates"
+    "output": "public"
+  }
+}
+```
+
+**Note!** These options **may not** use relative paths (eg. `../foo.txt`).

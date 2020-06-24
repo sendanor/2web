@@ -17,7 +17,7 @@ This program is still under development and in a design phase.
  * Designed KISS (Keep It Simple, Stupid) in mind, without the stupid part.
  * Fast to recompile -- Uses same strategies as Makefiles use
  * Small dependency footprint -- Written in [Python](https://www.python.org/) with [Jinja templates](https://jinja.palletsprojects.com/en/2.11.x/)
- * Template files are 100% compatible with Ansible
+ * Template files are 100% compatible with Ansible template syntax
 
 ------------------------------------------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 # 2web
 
-Fast &amp; Secure Website Builder
+Fast &amp; Secure Website Builder written in Python
 
 ------------------------------------------------------------------------------------------------------
 

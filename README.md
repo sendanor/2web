@@ -12,7 +12,7 @@ This program is still under development and in a design phase.
 
 ### Features 
 
- * Very much similar to [Jekyll](https://jekyllrb.com/) -- but not compatible
+ * Very much similar to [Jekyll](https://jekyllrb.com/) (written in Ruby) and [Hugo](https://gohugo.io/) (written in Go) -- but far simpler, and does not try to be compatible
  * Secure to run for untrusted build data. Templates are compiled inside Jinja's sandbox and includes do not allow relative paths outside of the base directory.
  * Designed KISS (Keep It Simple, Stupid) in mind, without the stupid part.
  * Fast to recompile -- Uses same strategies as Makefiles use

@@ -9,7 +9,7 @@ This program is still under development and in a design phase.
 ### Features 
 
  * Very much similar to [Jekyll](https://jekyllrb.com/) -- but not compatible
- * Secure to run for untrusted build data. Templates are compiled inside Jinja's sandbox and includes do not allow relative paths.
+ * Secure to run for untrusted build data. Templates are compiled inside Jinja's sandbox and includes do not allow relative paths outside of the base directory.
  * Designed KISS (Keep It Simple, Stupid) in mind, without the stupid part.
  * Fast to recompile -- Uses same strategies as Makefiles use
  * Small dependency footprint -- Written in [Python](https://www.python.org/) with [Jinja templates](https://jinja.palletsprojects.com/en/2.11.x/)
@@ -60,7 +60,7 @@ For example a file `_includes/header.html` can be included as:
 {{ include('header.html') }}
 ```
 
-**Note!** You cannot use relative paths for security reasons.
+**Note!** You cannot use relative paths to outside from _includes for security reasons.
 
 #### The output directory
 
@@ -88,8 +88,10 @@ You may place any uncompiled public files there, too. Just make sure you *don't*
 | `-t DIR`  | `--templates=DIR` | You may change the template directory | `_templates`   |
 | `-o DIR`  | `--output=DIR`    | You may change the output directory   | `_site`        |
 | `-c FILE` | `--config=FILE`   | You may change the config file        | `_config.json` |
+| `-a`      | `--ansible`       | Enable ansible compatible output      | Disabled       |
+| `-m`      | `--immutable`     | Enable immutable exit status          | Disabled       |
 
-**Note!** The command line arguments may use relative paths.
+**Note!** Exceptionally the command line arguments **can** use relative paths. This is by design. We don't trust the data, but we trust the guy/script running the command.
 
 ### Configuration file
 
@@ -107,3 +109,26 @@ The configuration file `_config.json` can be used to change defaults:
 ```
 
 **Note!** These options **may not** use relative paths (eg. `../foo.txt`).
+
+### Program exit statuses
+
+By default the exit status will be:
+
+ * `0` when the compilation was made successfully
+ * `1` when there was error(s)
+
+If you enable `--immutable`, there will be third option:
+
+ * `0` when the compilation successful and there was changes
+ * `1` when there was error(s)
+ * `2` when the compilation successful but there was no changes
+
+### Ansible support
+
+If you enable `--ansible`, the program will return ansible compatible JSON like:
+
+```json
+{
+  "changed": false
+}
+```

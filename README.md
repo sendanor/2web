@@ -43,7 +43,7 @@ specific data from `_data/PAGE.json`, where `PAGE` is the name from your
 
 The resulting data will be passed to the template engine as variables.
 
-#### Template files
+#### Template files (eg. pages)
 
 Templates for different pages are placed in `_pages/PAGE.EXT` where EXT is 
 usually `html`, but can be anything. 
@@ -76,7 +76,7 @@ You may place any uncompiled public files there, too. Just make sure you *don't*
 
 ------------------------------------------------------------------------------------------------------
 
-### Usage
+### Basic Usage
 
  0) *Optional:* Get coffee/tea beforehand because you most likely will not have 
     enough spare time to get a coffee between these steps.
@@ -95,7 +95,7 @@ You may place any uncompiled public files there, too. Just make sure you *don't*
 | --------- | ----------------- | ------------------------------------- | -------------- |
 | `-d DIR`  | `--data=DIR`      | You may change the data directory     | `_data`        |
 | `-i DIR`  | `--includes=DIR`  | You may change the include directory  | `_includes`    |
-| `-t DIR`  | `--templates=DIR` | You may change the template directory | `_templates`   |
+| `-t DIR`  | `--pages=DIR`     | You may change the template directory | `_pages`       |
 | `-o DIR`  | `--output=DIR`    | You may change the output directory   | `_site`        |
 | `-c FILE` | `--config=FILE`   | You may change the config file        | `_config.json` |
 | `-a`      | `--ansible`       | Enable ansible compatible output      | Disabled       |

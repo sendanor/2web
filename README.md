@@ -124,7 +124,7 @@ The configuration file `_config.json` can be used to change defaults:
 
 ------------------------------------------------------------------------------------------------------
 
-### Program exit statuses
+### Program return / exit status codes
 
 By default the exit status will be:
 
